@@ -1,0 +1,55 @@
+.imagens-slider{
+    height: 100vh;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.slide{
+    height: 100%;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    transition: .5s ease-in-out;
+}
+.conteudo{
+    width: 620px;
+    /* height: 700px; */
+    margin-left: 180px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 65px 60px;
+}
+.slide .conteudo .titulo{
+    font-size: 5rem;
+}
+.slide .conteudo .texto{
+    font-size: 3rem;
+    padding: 20px 0px;
+}
+.botao{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.botao.rosa{
+    color: #C50000;
+}
+.mostrar{
+    opacity: 1;
+}
+.slide-rosa{
+    background-image: url(../img/rosas.png);
+}
+.seta{
+    z-index: 1;
+}
+.seta-voltar .imagem-seta, 
+.seta-avancar .imagem-seta {
+    width: 49px;
+
+}
