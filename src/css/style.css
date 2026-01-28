@@ -19,7 +19,6 @@
 }
 .conteudo{
     width: 620px;
-    /* height: 700px; */
     margin-left: 180px;
     border-radius: 10px;
     background-color: white;
@@ -36,6 +35,18 @@
     font-size: 2rem;
     font-weight: bold;
 }
+.botao.verde{
+    color: #D9DD10;
+}
+.botao.rosa{
+    color: #C50000;
+}
+.botao.amarelo{
+    color: #A63A17;
+}
+.botao.azul{
+    color: #10ACDD;
+}
 .botao.rosa{
     color: #C50000;
 }
@@ -45,11 +56,34 @@
 .slide-rosa{
     background-image: url(../img/rosas.png);
 }
-.seta{
-    z-index: 1;
+.slide-verde{
+    background-image: url(../img/rosa-amarelas.png);
+}
+.slide-amarelo{
+    background-image: url(../img/montanha.png);
+}
+.slide-azul{
+    background-image: url(../img/lago-azul.png);
 }
 .seta-voltar .imagem-seta, 
 .seta-avancar .imagem-seta {
     width: 49px;
+}
+.seta-voltar, 
+.seta-avancar{
+    z-index: 1;
+    position: absolute;
+}
 
+.seta-voltar{
+    rotate: 180deg;
+    left: 4%;
+}
+.seta-avancar{
+    right: 4%;
+}
+
+.opacidade{
+    cursor: default;
+    opacity: .5;
 }
