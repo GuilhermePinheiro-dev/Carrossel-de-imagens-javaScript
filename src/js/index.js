@@ -1,6 +1,6 @@
-let slides = document.querySelectorAll(".slide")
-let setaAvancar = document.getElementById("seta-avancar")
-let setaVoltar = document.getElementById("seta-voltar")
+const slides = document.querySelectorAll(".slide")
+const setaAvancar = document.getElementById("seta-avancar")
+const setaVoltar = document.getElementById("seta-voltar")
 
 let imagemAtual = 0
 
@@ -11,8 +11,8 @@ setaAvancar.addEventListener("click", function (){
 
     apagarUltimoSlide()
     imagemAtual++
-    mostrarProximoSlide()
     removeOUadicionaSetas()
+    mostrarProximoSlide()
 })
 
 function apagarUltimoSlide(){
@@ -28,8 +28,8 @@ setaVoltar.addEventListener("click", function (){
     }
     apagarUltimoSlide()
     imagemAtual--
-    mostrarProximoSlide()
     removeOUadicionaSetas()
+    mostrarProximoSlide()
 })
 function removeOUadicionaSetas(){
     if(imagemAtual !== 0){
